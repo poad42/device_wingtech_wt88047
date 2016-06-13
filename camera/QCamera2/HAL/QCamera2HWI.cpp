@@ -1,4 +1,4 @@
-/* Copyright (c) 2012-2014, The Linux Foundataion. All rights reserved.
+/* Copyright (c) 2012-2016, The Linux Foundataion. All rights reserved.
 *
 * Redistribution and use in source and binary forms, with or without
 * modification, are permitted provided that the following conditions are
@@ -530,6 +530,7 @@ void QCamera2HardwareInterface::release_recording_frame(
     CDBG("%s: E", __func__);
 
     //Close and delete duplicated native handle and FD's
+<<<<<<< HEAD
     if ((hw->mVideoMem != NULL)&&(hw->mStoreMetaDataInFrame>0)) {
         ret = hw->mVideoMem->closeNativeHandle(opaque,TRUE);
         if (ret != NO_ERROR) {
@@ -541,6 +542,10 @@ void QCamera2HardwareInterface::release_recording_frame(
     }
 
 >>>>>>> ca23558... BACKPORT: QCamera2: HAL1: Close duplicated FD's for media extension.
+=======
+    QCameraVideoMemory::closeNativeHandle(opaque, hw->mStoreMetaDataInFrame > 0);
+
+>>>>>>> 6aae01f... BACKPORT: QCamera2: HAL1: Update native handle for every timestamp callback
     hw->lockAPI();
     qcamera_api_result_t apiResult;
     ret = hw->processAPI(QCAMERA_SM_EVT_RELEASE_RECORIDNG_FRAME, (void *)opaque);
