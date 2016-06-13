@@ -1038,6 +1038,11 @@ int QCameraVideoMemory::closeNativeHandle(const void *data, bool metadata)
         }
         if (packet != NULL && packet->eType ==
             kMetadataBufferTypeNativeHandleSource) {
+<<<<<<< HEAD
+=======
+            native_handle_close(packet->pHandle);
+            native_handle_delete(packet->pHandle);
+>>>>>>> ca23558... BACKPORT: QCamera2: HAL1: Close duplicated FD's for media extension.
             packet->pHandle = NULL;
         } else {
             ALOGE("Invalid Data. Could not release");

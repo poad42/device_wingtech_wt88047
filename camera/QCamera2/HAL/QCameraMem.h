@@ -185,6 +185,11 @@ public:
     virtual void deallocate();
     virtual camera_memory_t *getMemory(int index, bool metadata) const;
     virtual int getMatchBufIndex(const void *opaque, bool metadata) const;
+<<<<<<< HEAD
+=======
+    native_handle_t *updateNativeHandle(uint32_t index, bool metadata = true);
+    int closeNativeHandle(const void *data, bool metadata = true);
+>>>>>>> ca23558... BACKPORT: QCamera2: HAL1: Close duplicated FD's for media extension.
 
 private:
     camera_memory_t *mMetadata[MM_CAMERA_MAX_NUM_FRAMES];
