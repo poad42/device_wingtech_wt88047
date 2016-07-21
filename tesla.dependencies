@@ -9,7 +9,7 @@
     "remote": "github",
     "branch": "6.0",
     "repository": "premaca/Xiaomi_Kernel_OpenSource",
-    "target_path": "kernel/cyanogen/msm8916"
+    "target_path": "kernel/wingtech/msm8916"
   },
   {
     "remote": "github",
