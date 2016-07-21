@@ -1,3 +1,3 @@
 # Gello
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     Gello
