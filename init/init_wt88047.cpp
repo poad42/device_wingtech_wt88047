@@ -45,8 +45,6 @@
 #include "log.h"
 #include "util.h"
 
-#include "init_msm8916.h"
-
 #define MAX(a, b) (((a) > (b)) ? (a) : (b))
 
 #define ALPHABET_LEN 256
@@ -187,7 +185,7 @@ err_ret:
     return ret;
 }
 
-void init_target_properties()
+void vendor_load_properties()
 {
     char device[PROP_VALUE_MAX];
     char modem_version[IMG_VER_BUF_LEN];

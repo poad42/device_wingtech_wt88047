@@ -20,5 +20,8 @@ include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 DEVICE_PATH := device/wingtech/wt88047
 include $(DEVICE_PATH)/board/*.mk
 
+# Properties (reset them here, include more in device if needed)
+TARGET_SYSTEM_PROP := $(VENDOR_PATH)/system.prop
+
 # inherit from the proprietary version
 -include vendor/wingtech/wt88047/BoardConfigVendor.mk

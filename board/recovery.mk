@@ -1,4 +1,5 @@
 # Recovery
+TARGET_RECOVERY_DEVICE_MODULES := libinit_wt88047
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Filesystem
