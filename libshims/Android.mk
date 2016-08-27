@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 # Copyright (C) 2015 The CyanogenMod Project
+=======
+
+# Copyright (C) 2016 The CyanogenMod Project
+>>>>>>> 58bc5eb... msm8916-common: Reintroduce libshim_camera
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,6 +19,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
+<<<<<<< HEAD
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := parcel/parcel.cpp
@@ -37,4 +43,15 @@ LOCAL_MODULE := libshim_boringssl
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 
+=======
+# Camera
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := \
+    SensorManager.cpp \
+    moto_camera_misc.c
+
+LOCAL_SHARED_LIBRARIES := libutils libgui liblog libbinder
+LOCAL_MODULE := libshim_camera
+LOCAL_MODULE_TAGS := optional
+>>>>>>> 58bc5eb... msm8916-common: Reintroduce libshim_camera
 include $(BUILD_SHARED_LIBRARY)
