@@ -5,6 +5,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
+<<<<<<< HEAD
 LOCAL_PACKAGE_NAME := OneplusDoze
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
@@ -31,6 +32,14 @@ LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 include frameworks/base/packages/SettingsLib/common.mk
 
+=======
+LOCAL_PACKAGE_NAME := XiaomiDoze
+LOCAL_CERTIFICATE := platform
+LOCAL_PRIVILEGED_MODULE := true
+
+LOCAL_PROGUARD_FLAG_FILES := proguard.flags
+
+>>>>>>> a20f8f2... wt88047: Add XiaomiDoze package
 include $(BUILD_PACKAGE)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

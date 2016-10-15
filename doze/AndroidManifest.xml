@@ -7,6 +7,7 @@
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+<<<<<<< HEAD
     <uses-permission android:name="cyanogenmod.permission.MANAGE_REMOTE_PREFERENCES" />
 
     <uses-sdk
@@ -21,17 +22,36 @@
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="cyanogenmod.intent.action.UPDATE_PREFERENCE" />
+=======
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21"/>
+
+    <application
+        android:label="XiaomiDoze"
+        android:persistent="true">
+
+        <receiver android:name="com.cyanogenmod.settings.doze.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+>>>>>>> a20f8f2... wt88047: Add XiaomiDoze package
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
 
         <service android:name="com.cyanogenmod.settings.doze.DozeService"
+<<<<<<< HEAD
                  android:permission="OneplusDozeService">
+=======
+                 android:permission="XiaomiDozeService">
+>>>>>>> a20f8f2... wt88047: Add XiaomiDoze package
         </service>
 
         <activity
             android:name=".DozeSettings"
             android:label="@string/ambient_display_title"
+<<<<<<< HEAD
             android:theme="@style/DozeSettings">
             <intent-filter>
                 <action android:name="org.cyanogenmod.settings.device.DOZE_SETTINGS" />
@@ -43,6 +63,18 @@
             <meta-data
                 android:name="org.cyanogenmod.settings.summary.key"
                 android:value="doze_device_settings" />
+=======
+            android:theme="@android:style/Theme.Material.Settings">
+            <intent-filter>
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.device" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_settings_doze" />
+>>>>>>> a20f8f2... wt88047: Add XiaomiDoze package
         </activity>
 
     </application>

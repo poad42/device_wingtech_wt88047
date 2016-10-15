@@ -114,6 +114,10 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     memtrack.msm8916
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    XiaomiDoze
+
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
