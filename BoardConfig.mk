@@ -94,6 +94,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Tap-to-Wake
+TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
+
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # inherit from the proprietary version
