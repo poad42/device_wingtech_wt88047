@@ -95,3 +95,8 @@ persist.timed.enable=true
 # WiFi
 ro.disableWifiApFirmwareReload=true
 wifi.interface=wlan0
+
+# Enable ADB at boot
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb

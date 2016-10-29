@@ -21,10 +21,4 @@
     <!-- Doze: does this device support STATE_DOZE and STATE_DOZE_SUSPEND?  -->
     <bool name="doze_display_state_supported">false</bool>
     <bool name="doze_pulse_on_pick_up">false</bool>
-<<<<<<< HEAD
-    <!-- Enable doze mode -->
-    <bool name="doze_display_state_supported">true</bool>
-
-=======
->>>>>>> parent of c46e959... wt88047: Enable Ambient Display
 </resources>
