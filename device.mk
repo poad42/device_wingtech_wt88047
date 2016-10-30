@@ -89,6 +89,9 @@ PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library \
     libantradio
+#Camera
+    libshims_camera \
+    Snap
 
 # Charger
 PRODUCT_PACKAGES += \
