@@ -126,6 +126,7 @@ ___________________________________________________
             <Limit name="blocks-per-second" min="1" max="244800" />
             <Limit name="bitrate" range="1-20000000" />
             <Limit name="concurrent-instances" max="8" />
+            <Feature name="intra-refresh" />
         </MediaCodec>
         <MediaCodec name="OMX.qcom.video.encoder.mpeg4" type="video/mp4v-es" >
             <Quirk name="requires-allocate-on-input-ports" />
@@ -159,11 +160,14 @@ ___________________________________________________
             <Limit name="blocks-per-second" min="1" max="244800" />
             <Limit name="bitrate" range="1-20000000" />
             <Limit name="concurrent-instances" max="8" />
+            <Feature name="intra-refresh" />
         </MediaCodec>
     </Encoders>
     <Decoders>
         <!-- Audio Software  -->
-        <MediaCodec name="OMX.qti.audio.decoder.flac" type="audio/flac" />
+        <MediaCodec name="OMX.qti.audio.decoder.flac" type="audio/flac" >
+            <Limit name="concurrent-instances" max="10" />
+        </MediaCodec>
         <!-- Video Hardware  -->
         <MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" >
             <Quirk name="requires-allocate-on-input-ports" />
