@@ -17,7 +17,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-<<<<<<< HEAD
 package com.cyanogenmod.settings.doze;
 
 import android.app.Activity;
@@ -42,7 +41,6 @@ public class DozeSettings extends SettingsDrawerActivity {
 
         getFragmentManager().beginTransaction().replace(R.id.content_frame,
                 new DozeSettingsFragment(), TAG_DOZE).commit();
-=======
 
 package com.cyanogenmod.settings.doze;
 
@@ -112,7 +110,6 @@ public class DozeSettings extends PreferenceActivity implements OnPreferenceChan
     @Override
     protected void onResume() {
         super.onResume();
->>>>>>> a20f8f2... wt88047: Add XiaomiDoze package
     }
 
     @Override

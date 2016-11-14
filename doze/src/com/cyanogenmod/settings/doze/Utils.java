@@ -16,7 +16,6 @@
 
 package com.cyanogenmod.settings.doze;
 
-<<<<<<< HEAD
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -27,7 +26,6 @@ import android.util.Log;
 
 import static android.provider.Settings.Secure.DOZE_ENABLED;
 
-=======
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
 import android.content.Context;
@@ -38,7 +36,6 @@ import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.util.Log;
 
->>>>>>> a20f8f2... wt88047: Add XiaomiDoze package
 public final class Utils {
 
     private static final String TAG = "DozeUtils";
@@ -46,20 +43,13 @@ public final class Utils {
 
     private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
 
-<<<<<<< HEAD
     protected static final String AMBIENT_DISPLAY_KEY = "doze_enabled";
-=======
     protected static final String AMBIENT_DISPLAY_KEY = "ambient_display";
->>>>>>> a20f8f2... wt88047: Add XiaomiDoze package
     protected static final String PICK_UP_KEY = "pick_up";
     protected static final String GESTURE_HAND_WAVE_KEY = "gesture_hand_wave";
     protected static final String GESTURE_POCKET_KEY = "gesture_pocket";
 
-<<<<<<< HEAD
     public static final Uri DOZE_ENABLED_URI = Settings.Secure.getUriFor(DOZE_ENABLED);
-
-=======
->>>>>>> a20f8f2... wt88047: Add XiaomiDoze package
     protected static void startService(Context context) {
         if (DEBUG) Log.d(TAG, "Starting service");
         context.startService(new Intent(context, DozeService.class));

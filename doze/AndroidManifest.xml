@@ -7,7 +7,6 @@
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-<<<<<<< HEAD
     <uses-permission android:name="cyanogenmod.permission.MANAGE_REMOTE_PREFERENCES" />
 
     <uses-sdk
@@ -22,7 +21,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="cyanogenmod.intent.action.UPDATE_PREFERENCE" />
-=======
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -35,7 +33,6 @@
         <receiver android:name="com.cyanogenmod.settings.doze.BootCompletedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
->>>>>>> a20f8f2... wt88047: Add XiaomiDoze package
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>

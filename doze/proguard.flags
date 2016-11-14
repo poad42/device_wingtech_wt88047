@@ -1,11 +1,9 @@
-<<<<<<< HEAD
+
 -keepclasseswithmembers class * {
     public <init>(android.content.Context, android.util.AttributeSet);
 }
 
 -keep class ** extends android.support.v14.preference.PreferenceFragment
-=======
->>>>>>> a20f8f2... wt88047: Add XiaomiDoze package
 -keep class com.cyanogenmod.settings.doze.* {
   *;
 }
