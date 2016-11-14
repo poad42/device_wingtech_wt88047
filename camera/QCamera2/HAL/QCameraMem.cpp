@@ -972,7 +972,6 @@ camera_memory_t *QCameraStreamMemory::getMemory(int index, bool metadata) const
 }
 
 /*===========================================================================
-<<<<<<< HEAD
 =======
 * FUNCTION   : updateNativeHandle
 
