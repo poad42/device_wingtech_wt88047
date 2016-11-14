@@ -229,11 +229,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8916 \
-<<<<<<< HEAD
-    libmm-qcamera
-=======
+    libmm-qcamera \
     Snap
->>>>>>> 41c1ac2... camera: modify flags and definitions for legacy hal1
 
 PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.legacyencoder=true \
