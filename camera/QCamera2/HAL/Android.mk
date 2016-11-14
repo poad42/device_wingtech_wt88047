@@ -16,8 +16,6 @@ LOCAL_SRC_FILES := \
         QCameraParameters.cpp \
         QCameraThermalAdapter.cpp \
         wrapper/QualcommCamera.cpp
-
-<<<<<<< HEAD
 LOCAL_CFLAGS = -Wall -Wextra -Werror -DDEFAULT_DENOISE_MODE_ON
 LOCAL_CFLAGS += -DHAS_MULTIMEDIA_HINTS
 LOCAL_CFLAGS += -DUSE_MEDIA_EXTENSIONS
@@ -37,7 +35,6 @@ endif
 ifneq ($(call is-platform-sdk-version-at-least,18),true)
 LOCAL_CFLAGS += -DUSE_JB_MR1
 endif
->>>>>>> 6aae01f... BACKPORT: QCamera2: HAL1: Update native handle for every timestamp callback
 
 LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/../stack/common \

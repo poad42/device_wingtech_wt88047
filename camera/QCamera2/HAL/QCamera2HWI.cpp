@@ -524,13 +524,10 @@ void QCamera2HardwareInterface::release_recording_frame(
         ALOGE("NULL camera device");
         return;
     }
-<<<<<<< HEAD
     CDBG_HIGH("%s: E", __func__);
-=======
     CDBG("%s: E", __func__);
 
     //Close and delete duplicated native handle and FD's
-<<<<<<< HEAD
     if ((hw->mVideoMem != NULL)&&(hw->mStoreMetaDataInFrame>0)) {
         ret = hw->mVideoMem->closeNativeHandle(opaque,TRUE);
         if (ret != NO_ERROR) {
@@ -540,12 +537,7 @@ void QCamera2HardwareInterface::release_recording_frame(
     } else {
         ALOGW("Possible FD leak. Release recording called after stop");
     }
-
->>>>>>> ca23558... BACKPORT: QCamera2: HAL1: Close duplicated FD's for media extension.
-=======
     QCameraVideoMemory::closeNativeHandle(opaque, hw->mStoreMetaDataInFrame > 0);
-
->>>>>>> 6aae01f... BACKPORT: QCamera2: HAL1: Update native handle for every timestamp callback
     hw->lockAPI();
     qcamera_api_result_t apiResult;
     ret = hw->processAPI(QCAMERA_SM_EVT_RELEASE_RECORIDNG_FRAME, (void *)opaque);
@@ -1033,14 +1025,10 @@ QCamera2HardwareInterface::QCamera2HardwareInterface(int cameraId)
       mReprocJob(-1),
       mRawdataJob(-1),
       mPreviewFrameSkipValid(0),
-<<<<<<< HEAD
       mNumPreviewFaces(-1)
-=======
       mInputCount(0),
       mAdvancedCaptureConfigured(false),
       mVideoMem(NULL)
-
->>>>>>> ca23558... BACKPORT: QCamera2: HAL1: Close duplicated FD's for media extension.
 {
     getLogLevel();
     mCameraDevice.common.tag = HARDWARE_DEVICE_TAG;

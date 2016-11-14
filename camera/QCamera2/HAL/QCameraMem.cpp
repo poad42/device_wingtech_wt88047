@@ -1037,7 +1037,6 @@ int QCameraVideoMemory::closeNativeHandle(const void *data, bool metadata)
     int32_t index = -1;
 
 #ifdef USE_MEDIA_EXTENSIONS
-<<<<<<< HEAD
     camera_memory_t *video_mem = NULL;
     if (metadata) {
         index = getMatchBufIndex(data, metadata);
@@ -1052,11 +1051,8 @@ int QCameraVideoMemory::closeNativeHandle(const void *data, bool metadata)
         }
         if (packet != NULL && packet->eType ==
             kMetadataBufferTypeNativeHandleSource) {
-<<<<<<< HEAD
-=======
             native_handle_close(packet->pHandle);
             native_handle_delete(packet->pHandle);
->>>>>>> ca23558... BACKPORT: QCamera2: HAL1: Close duplicated FD's for media extension.
             packet->pHandle = NULL;
         } else {
             ALOGE("Invalid Data. Could not release");
@@ -1064,7 +1060,6 @@ int QCameraVideoMemory::closeNativeHandle(const void *data, bool metadata)
         }
     } else {
         ALOGE("Warning: Not of type video meta buffer");
-=======
     camera_memory_t *video_mem = (camera_memory_t *)data;
 
     if(video_mem == NULL) {
@@ -1081,7 +1076,6 @@ int QCameraVideoMemory::closeNativeHandle(const void *data, bool metadata)
         }
     } else {
         ALOGE("Not of type video meta buffer. Failed");
->>>>>>> 6aae01f... BACKPORT: QCamera2: HAL1: Update native handle for every timestamp callback
         return BAD_VALUE;
     }
 #endif

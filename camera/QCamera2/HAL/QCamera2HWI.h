@@ -635,11 +635,8 @@ private:
     int32_t mOutputCount;
     bool mPreviewFrameSkipValid;
     cam_frame_idx_range_t mPreviewFrameSkipIdxRange;
-<<<<<<< HEAD
     int32_t mNumPreviewFaces;
-=======
     QCameraVideoMemory *mVideoMem;
->>>>>>> ca23558... BACKPORT: QCamera2: HAL1: Close duplicated FD's for media extension.
 };
 
 }; // namespace qcamera
