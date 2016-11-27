@@ -24,6 +24,18 @@ qcom.bluetooth.soc=smd
 dalvik.vm.dex2oat-filter=interpret-only
 dalvik.vm.image-dex2oat-filter=speed
 
+#Dex2oat Limits
+
+dalvik.vm.boot-dex2oat-threads=12
+dalvik.vm.dex2oat-threads=6
+dalvik.vm.image-dex2oat-threads=12
+
+
+# Higher fling velocities to smooth scrolling
+# and provide better responsiveness
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+
 # Display
 debug.composition.type=c2d
 debug.sf.gpu_comp_tiling=1
