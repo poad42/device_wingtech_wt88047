@@ -44,6 +44,8 @@
 /dev/smd6                 0660   system     system
 /dev/smd7                 0660   bluetooth  bluetooth
 /dev/ccid_bridge          0660   system     system
+/dev/ipa                  0660   system     net_admin
+/dev/wwan_ioctl           0660   system     net_admin
 
 #permissions for CSVT
 /dev/smd11                0660   radio      radio
@@ -108,6 +110,12 @@
 /dev/jpeg2                0660   system     camera
 /dev/adsprpc-smd          0664   system     system
 /dev/mmc3416x             0660   system     system
+# wlan
+/dev/wcnss_wlan           0660   system     system
+/dev/wcnss_ctrl           0660   system     system
+/sys/devices/soc.0/a000000.qcom,wcnss-wlan/net/wlan0/queues/rx-* rps_cpus           0660   system     system
+/sys/devices/soc.0/a000000.qcom,wcnss-wlan/net/p2p0/queues/rx-* rps_cpus            0660   system     system
+
 /dev/msm_camera/*         0660   system     camera
 /dev/gemini/              0660   system     camera
 /dev/mercury0             0660   system     camera
@@ -180,9 +188,6 @@
 /dev/vm_bms               0660   system     system
 /dev/battery_data         0660   system     system
 
-# wlan
-/dev/wcnss_wlan           0660   system     system
-/dev/wcnss_ctrl           0660   system     system
 
 #nfc permissions
 /dev/nfc-nci              0660    nfc         nfc
@@ -195,6 +200,9 @@
 
 # ESOC devices
 /dev/subsys_esoc*         0640   system     radio
+
+# wlan
+/dev/wcnss_wlan           0660   system     system
 
 #BST
 /sys/devices/virtual/input/input* range                       0660    input      system

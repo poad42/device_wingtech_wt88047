@@ -108,17 +108,14 @@
             <Limit name="measured-frame-rate-1920x1080" range="101-101" />
         </MediaCodec>
         <MediaCodec name="OMX.google.vp8.decoder" type="video/x-vnd.on2.vp8" update="true">
-<<<<<<< HEAD
             <Limit name="measured-frame-rate-320x240" range="773-773" />
             <Limit name="measured-frame-rate-640x360" range="257-257" />
             <Limit name="measured-frame-rate-1280x720" range="52-52" />
             <Limit name="measured-frame-rate-1920x1080" range="44-44" />
-=======
             <Limit name="measured-frame-rate-320x240" range="361-361" />
             <Limit name="measured-frame-rate-640x360" range="280-280" />
             <Limit name="measured-frame-rate-1280x720" range="40-40" />
             <Limit name="measured-frame-rate-1920x1080" range="25-25" />
->>>>>>> ac47058... msm8956: Sync media_codecs_performance with CAF
         </MediaCodec>
         <MediaCodec name="OMX.google.vp9.decoder" type="video/x-vnd.on2.vp9" update="true">
             <Limit name="measured-frame-rate-320x240" range="463-463" />
