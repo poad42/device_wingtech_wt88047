@@ -83,9 +83,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.audio.fluencetype=fluence \
     persist.audio.fluence.voicerec=false
 
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -229,7 +226,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8916 \
-    Snap
+    Camera2        \
+    libmm-qcamera
 
 PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.legacyencoder=true \
