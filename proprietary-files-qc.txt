@@ -260,6 +260,11 @@ vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libSHIMDivxDrm.so
 
 # Perf
+<<<<<<< HEAD
+=======
+bin/msm_irqbalance
+vendor/bin/perfd
+>>>>>>> 2be752d... wt88047: replace mpdecision with perfd
 vendor/lib/libqti-perfd-client.so
 
 # Postprocessing
