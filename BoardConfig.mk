@@ -20,6 +20,9 @@ DEVICE_PATH := device/wingtech/wt88047
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
+# Use Snapdragon LLVM, if available
+TARGET_USE_SDCLANG := true
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8916
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno306
