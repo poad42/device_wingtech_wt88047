@@ -342,6 +342,10 @@ PRODUCT_PACKAGES += \
     ims \
     imscmlibrary \
     init.qti.ims.sh
+    
+ # Allow tethering without provisioning app
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true   
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ims/imscm.xml:system/etc/permissions/imscm.xml \
